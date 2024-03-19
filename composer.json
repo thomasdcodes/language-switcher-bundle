@@ -1,0 +1,22 @@
+{
+  "name": "tdc/language-switcher-bundle",
+  "description": "Gives a possibility to change the language, store it in session and set it as default language",
+  "keywords": ["switch language"],
+  "type": "symfony-bundle",
+  "version": "dev-master",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thomas Deutschländer",
+      "email": "me@thomasd.codes"
+    }
+  ],
+  "require": {
+    "php": ">=8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tdc\\LanguageSwitcherBundle\\": "./src"
+    }
+  }
+}

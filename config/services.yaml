@@ -1,0 +1,13 @@
+services:
+  tdc.language_switcher_bundle.event_subscriber.request_subscriber:
+    class: Tdc\LanguageSwitcherBundle\EventSubscriber\RequestSubscriber
+    tags:
+      - { name: kernel.event_subscriber }
+    arguments:
+      [ '@translation.locale_switcher' ]
+
+  Tdc\LanguageSwitcherBundle\Controller\LanguageController:
+    tags:
+      - { name: controller.service_arguments }
+    calls:
+      - [setContainer, ['@service_container' ]]
