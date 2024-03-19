@@ -1,5 +1,5 @@
 {
-  "name": "tdc/language-switcher-bundle",
+  "name": "thomasdcodes/language-switcher-bundle",
   "description": "Gives a possibility to change the language, store it in session and set it as default language",
   "keywords": ["switch language"],
   "type": "symfony-bundle",
