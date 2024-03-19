@@ -3,7 +3,7 @@
   "description": "Gives a possibility to change the language, store it in session and set it as default language",
   "keywords": ["switch language"],
   "type": "symfony-bundle",
-  "version": "dev-master",
+  "version": "0.1.0",
   "license": "MIT",
   "authors": [
     {
