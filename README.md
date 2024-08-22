@@ -8,14 +8,14 @@ composer require thomasdcodes/language-switcher-bundle
 ```
 If you're using Symfony Flex, the Bundle should be registered in your config/bundles.php
 
-Insight config/routes add a new file with the following standard settings:
+Inside config/routes add a new file (tdc_language_switcher_bundle.yaml) with the following standard settings:
 ```yaml
 tdc_language_switcher_bundle.routes:
   resource: '@TdcLanguageSwitcherBundle/config/routes.yaml'
 ```
 
 ## Template 
-To use the Language Switch insight your navigation template insight a li-Tag:
+To use the Language Switch inside your navigation template inside a li-Tag:
 ```twig
 {% include '@TdcLanguageSwitcher/_language_switch.html.twig' %}
 ```

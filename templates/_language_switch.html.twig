@@ -1,10 +1,10 @@
 <li class="nav-item dropdown">
-    {% set currentLang = app.request.session.get('_locale', 'DE') %}
+    {% set currentLang = app.request.session.get('_locale', 'de') %}
     <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
             type="button"
             aria-expanded="false"
             data-bs-toggle="dropdown"
-            aria-label="Toogle Language">
+            aria-label="Toggle Language">
         {{ currentLang }}
     </button>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">

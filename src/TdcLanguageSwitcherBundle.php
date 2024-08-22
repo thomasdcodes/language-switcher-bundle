@@ -4,19 +4,14 @@ declare(strict_types=1);
 
 namespace Tdc\LanguageSwitcherBundle;
 
-use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
-use Symfony\Component\HttpKernel\Bundle\Bundle;
-use Tdc\LanguageSwitcherBundle\DependencyInjection\TdcContainerExtension;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
-class TdcLanguageSwitcherBundle extends Bundle
+class TdcLanguageSwitcherBundle extends AbstractBundle
 {
-    public function getPath(): string
+    public function loadExtension(array $config, ContainerConfigurator $container, ContainerBuilder $builder): void
     {
-        return dirname(__DIR__);
-    }
-
-    public function getContainerExtension(): ?ExtensionInterface
-    {
-        return new TdcContainerExtension();
+        $container->import('../config/services.yaml');
     }
 }
